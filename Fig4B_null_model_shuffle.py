@@ -27,10 +27,10 @@ def to_matrix(l, n):
     return [l[i:i+n] for i in range(0, len(l), n)]
 
 # load data
-part1_df = pd.read_csv('Abundance_data_Fig2BC_part1.csv', index_col=[0]) #this is the pairs data, the same data as 'Abundance_data_Fig2BC' deposited at https://doi.org/10.5281/zenodo.7049039 , just formatted slightly differently
-E81_df = pd.read_csv('Abundance_data_SuppFig3AB_part2.csv', index_col=[0]) #this is the same data as 'Abundance_data_SuppFig3AB' part 2 deposited at https://doi.org/10.5281/zenodo.7049039 , just formatted slightly differently
-E90_df = pd.read_csv('Abundance_data_SuppFig3AB_part1.csv', index_col=[0]) #this is the same data as 'Abundance_data_SuppFig3AB' part 1 deposited at https://doi.org/10.5281/zenodo.7049039 , just formatted slightly differently
-E32_df = pd.read_csv('Abundance_data_SuppFig3AB_part3.csv', index_col=[0]) #this is the same data as 'Abundance_data_SuppFig3AB' part 3 deposited at https://doi.org/10.5281/zenodo.7049039 , just formatted slightly differently
+part1_df = pd.read_csv('Abundance_data_Fig2BC_part1.csv', index_col=[0]) #this is the pairs data, the same data as 'Abundance_data_Fig2BC' deposited at https://doi.org/10.5281/zenodo.7626486 , just formatted slightly differently
+E81_df = pd.read_csv('Abundance_data_SuppFig3AB_part2.csv', index_col=[0]) #this is the same data as 'Abundance_data_SuppFig3AB' part 2 deposited at https://doi.org/10.5281/zenodo.7626486 , just formatted slightly differently
+E90_df = pd.read_csv('Abundance_data_SuppFig3AB_part1.csv', index_col=[0]) #this is the same data as 'Abundance_data_SuppFig3AB' part 1 deposited at https://doi.org/10.5281/zenodo.7626486 , just formatted slightly differently
+E32_df = pd.read_csv('Abundance_data_SuppFig3AB_part3.csv', index_col=[0]) #this is the same data as 'Abundance_data_SuppFig3AB' part 3 deposited at https://doi.org/10.5281/zenodo.7626486 , just formatted slightly differently
 #duplicate 0 antibiotic condition to be Metr and Vanco
 zero_df = E81_df[E81_df['Concentration']==0]
 for ind in zero_df.index:
