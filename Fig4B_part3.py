@@ -36,7 +36,7 @@ scaling_factor_dict = {'Metronidazole':24,'Vancomycin':12}
 
 # load part3 data (communities part1)
 E90_communities = {'SEHE90_1':[1],'SEHE90_2':[1,3,4],'SEHE90_3':[1,3,4,6],'SEHE90_4':[1,3,4,9],'SEHE90_5':[1,3,4,11],'SEHE90_6':[1,3,4,7,14],'SEHE90_7':[1,3,4,10],'SEHE90_8':[1,3,4,12],'SEHE90_9':[1,3,4,6,11],'SEHE90_10':[1,3,4,7,9,14],'SEHE90_11':[1,3,4,6,9,11],'SEHE90_12':[1,3,4,7,11,14]}
-E90_df = pd.read_csv('Abundance_data_SuppFig3AB_part1.csv', index_col=[0]) #this is the same data as 'Abundance_data_SuppFig3AB' part 1 deposited at https://doi.org/10.5281/zenodo.7049039 , just formatted slightly differently
+E90_df = pd.read_csv('Abundance_data_SuppFig3AB_part1.csv', index_col=[0]) #this is the same data as 'Abundance_data_SuppFig3AB' part 1 deposited at https://doi.org/10.5281/zenodo.7626486 , just formatted slightly differently
 #duplicate 0 antibiotic condition to be Metr and Vanco
 zero_df = E90_df[E90_df['Concentration']==0]
 for ind in zero_df.index:
