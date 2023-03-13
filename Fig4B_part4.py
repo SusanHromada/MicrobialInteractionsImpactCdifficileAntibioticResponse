@@ -42,7 +42,7 @@ for ind in E32_comm.index:
     splist = ast.literal_eval(E32_comm.at[ind,'Community'])
     if splist not in [['1','4'],['1','6']]:
         E32_splists.append(splist)
-E32_df = pd.read_csv('Abundance_data_SuppFig3AB_part3.csv', index_col=[0]) #this is the same data as 'Abundance_data_SuppFig3AB' part 3 deposited at https://doi.org/10.5281/zenodo.7049039 , just formatted slightly differently
+E32_df = pd.read_csv('Abundance_data_SuppFig3AB_part3.csv', index_col=[0]) #this is the same data as 'Abundance_data_SuppFig3AB' part 3 deposited at https://doi.org/10.5281/zenodo.7626486 , just formatted slightly differently
 modelType_fraction_correct = {'Model1':[-1],'gLV_no_antib':[-1],'gLV_no_int':[-1],'Model1_num':[-1],'gLV_num':[-1],'gLV_no_int_num':[-1]}
 
 #%% Simulate conditions from part2 data with expanded gLV model (Model1) and two null models (gLV_no_antib, gLV_no_int)
