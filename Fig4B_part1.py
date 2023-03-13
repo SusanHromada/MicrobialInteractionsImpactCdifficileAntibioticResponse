@@ -35,7 +35,7 @@ antib_param_df = pd.read_csv('Model1_scaled_parameter.csv', index_col=[0])
 scaling_factor_dict = {'Metronidazole':24,'Vancomycin':12} 
 
 # load part1 data (pairs)
-part1_df = pd.read_csv('Abundance_data_Fig2BC_part1.csv', index_col=[0]) #this is the pairs data, the same data as 'Abundance_data_Fig2BC' deposited at https://doi.org/10.5281/zenodo.7049039 , just formatted slightly differently
+part1_df = pd.read_csv('Abundance_data_Fig2BC_part1.csv', index_col=[0]) #this is the pairs data, the same data as 'Abundance_data_Fig2BC' deposited at https://doi.org/10.5281/zenodo.7626486 , just formatted slightly differently
 modelType_fraction_correct = {'Model1':[-1],'gLV_no_antib':[-1],'gLV_no_int':[-1],'Model1_num':[-1],'gLV_num':[-1],'gLV_no_int_num':[-1]}
 
 #%% Simulate conditions from part1 data with expanded gLV model (Model1) and two null models (gLV_no_antib, gLV_no_int)
